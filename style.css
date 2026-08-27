@@ -5,12 +5,12 @@
     --bg: #061019;
     --bg2: #091722;
     --bg3: #0d1d29;
-    --gold: #d7ad62;
-    --gold-light: #f0d18e;
-    --gold-dark: #a67b35;
+    --gold: #ffffff;
+    --gold-light: #f8f9fa;
+    --gold-dark: #e2e8f0;
     --white: #ffffff;
     --muted: #aab4bb;
-    --border: rgba(215,173,98,.35);
+    --border: rgba(255,255,255,.35);
     --shadow: 0 20px 60px rgba(0,0,0,.45);
     --radius: 16px;
     --container: 1380px;
@@ -203,7 +203,7 @@ nav a.active::after {
     padding: 11px 22px;
     border-radius: 8px;
     color: #111;
-    background: linear-gradient(135deg, #f1d596, #bd8d43);
+    background: linear-gradient(135deg, #ffffff, #e2e8f0);
     font-weight: 700;
     font-size: 13px;
     transition: .3s;
@@ -211,7 +211,7 @@ nav a.active::after {
 
 .header-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(215,173,98,.2);
+    box-shadow: 0 10px 30px rgba(255,255,255,.2);
 }
 
 /* MOBILE MENU */
@@ -232,12 +232,12 @@ nav a.active::after {
 ===================================================== */
 
 .hero {
-    min-height: 700px; /* تقليل ارتفاع القسم الرئيسي بدلاً من 820px */
+    min-height: 700px;
     position: relative;
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: radial-gradient(circle at 20% 50%, rgba(215,173,98,.10), transparent 40%), #07121b;
+    background: radial-gradient(circle at 20% 50%, rgba(255,255,255,.10), transparent 40%), #07121b;
 }
 
 .hero-bg {
@@ -246,14 +246,13 @@ nav a.active::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.90; /* زيادة وضوح الفيديو وتقليل الضبابية (كانت 0.75) */
+    opacity: 0.90;
     pointer-events: none;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    /* تخفيف الطبقة الداكنة الملونة ليكون الفيديو أوضح */
     background: linear-gradient(90deg, rgba(3,10,15,0.65) 0%, rgba(3,10,15,0.35) 50%, rgba(3,10,15,0.15) 100%);
 }
 
@@ -261,7 +260,6 @@ nav a.active::after {
     content: "";
     position: absolute;
     inset: 0;
-    /* تخفيف الظل الخارجي حول الحواف */
     background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.3) 100%);
     pointer-events: none;
 }
@@ -270,7 +268,7 @@ nav a.active::after {
     position: relative;
     z-index: 2;
     width: min(750px, 100%);
-    padding-top: 40px; /* تقليل المسافة العلوية لضغط ارتفاع المحتوى */
+    padding-top: 40px;
 }
 
 .hero-small {
@@ -280,7 +278,7 @@ nav a.active::after {
 }
 
 .hero h1 {
-    font-size: clamp(38px, 5vw, 64px); /* تصغير حجم العنوان ليناسب الارتفاع الجديد */
+    font-size: clamp(38px, 5vw, 64px);
     line-height: 1.15;
     font-weight: 900;
     margin-bottom: 15px;
@@ -338,7 +336,7 @@ nav a.active::after {
 
 .btn-primary {
     color: #111;
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
 }
 
 .btn-secondary {
@@ -356,7 +354,7 @@ nav a.active::after {
 .trust-section {
     position: relative;
     z-index: 10;
-    margin-top: -40px; /* رفع القسم قليلاً ليتداخل بشكل فخم مع نهاية الهيرو */
+    margin-top: -40px;
     padding-bottom: 30px;
 }
 
@@ -369,7 +367,7 @@ nav a.active::after {
 .trust-card {
     position: relative;
     background: linear-gradient(145deg, rgba(15, 32, 45, 0.9), rgba(7, 18, 27, 0.95));
-    border: 1px solid rgba(240, 209, 142, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     padding: 24px 20px;
     display: flex;
@@ -381,31 +379,28 @@ nav a.active::after {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* توهج ذهبي خلفي ناعم يظهر عند التحويم */
 .card-glow {
     position: absolute;
     top: -50%;
     right: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(240, 209, 142, 0.12) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 60%);
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none;
 }
 
-/* تأثير تحريك البطاقة عند وضع الماوس عليها */
 .trust-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(240, 209, 142, 0.5);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(240, 209, 142, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.15);
 }
 
 .trust-card:hover .card-glow {
     opacity: 1;
 }
 
-/* صندوق الأيقونة بدون حدود وبإضاءة هادئة */
 .trust-icon-box {
     width: 48px;
     height: 48px;
@@ -413,20 +408,19 @@ nav a.active::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(240, 209, 142, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 22px;
     transition: transform 0.4s ease, background 0.4s ease;
 }
 
 .trust-card:hover .trust-icon-box {
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
     color: #07121b;
-    transform: rotateY(180deg); /* تدوير احترافي للأيقونة عند التحويم */
+    transform: rotateY(180deg);
 }
 
-/* تنسيق النصوص */
 .trust-text h3 {
     color: #ffffff;
     font-size: 15px;
@@ -489,7 +483,7 @@ nav a.active::after {
 
 .why-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(215,173,98,.4);
+    border-color: rgba(255,255,255,.4);
     box-shadow: 0 20px 50px rgba(0,0,0,.4);
 }
 
@@ -530,20 +524,20 @@ nav a.active::after {
 ===================================================== */
 .products {
     background: #061019;
-    padding: 60px 0; /* تقليل المسافة العلوية والسفلية للقسم */
+    padding: 60px 0;
 }
 
 .products-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px; /* تقليل الفجوة بين الكروت */
+    gap: 25px;
 }
 
 .product-card {
     position: relative;
     background: rgba(10, 24, 34, 0.8);
-    border: 1px solid rgba(240, 209, 142, 0.15);
-    border-radius: 16px; /* حواف منحنية أنيقة */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
     overflow: hidden;
     backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -551,19 +545,18 @@ nav a.active::after {
 }
 
 .product-card.featured {
-    border-color: rgba(240, 209, 142, 0.35);
+    border-color: rgba(255, 255, 255, 0.35);
 }
 
 .product-card:hover {
     transform: translateY(-6px);
-    border-color: var(--gold-light, #f0d18e);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(240, 209, 142, 0.12);
+    border-color: var(--gold-light, #f8f9fa);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.12);
 }
 
-/* تصغير ارتفاع الصورة */
 .product-image {
     position: relative;
-    height: 250px; /* تم التخفيض من 380px إلى 250px ليكون الحجم مناسباً جداً */
+    height: 250px;
     width: 100%;
     overflow: hidden;
 }
@@ -585,13 +578,12 @@ nav a.active::after {
     background: linear-gradient(180deg, rgba(6, 16, 25, 0.1) 0%, rgba(10, 24, 34, 0.9) 100%);
 }
 
-/* البادجات والتاجات بأسلوب مدمج */
 .product-badge {
     position: absolute;
     top: 14px;
     right: 14px;
     z-index: 3;
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
     color: #07121b;
     padding: 4px 12px;
     border-radius: 20px;
@@ -613,9 +605,8 @@ nav a.active::after {
     backdrop-filter: blur(4px);
 }
 
-/* تفاصيل المنتج داخل البطاقة */
 .product-info {
-    padding: 18px 20px 20px 20px; /* تقليل المسافات الداخلية */
+    padding: 18px 20px 20px 20px;
 }
 
 .product-header {
@@ -629,7 +620,7 @@ nav a.active::after {
 
 .product-header h3 {
     color: #ffffff;
-    font-size: 17px; /* خط أرق وأصغر */
+    font-size: 17px;
     font-weight: 700;
     margin: 0;
 }
@@ -640,8 +631,8 @@ nav a.active::after {
 
 .price-box .amount {
     display: block;
-    color: var(--gold-light, #f0d18e);
-    font-size: 20px; /* تصغير حجم السعر */
+    color: var(--gold-light, #f8f9fa);
+    font-size: 20px;
     font-weight: 800;
     line-height: 1;
 }
@@ -652,7 +643,6 @@ nav a.active::after {
     font-weight: 600;
 }
 
-/* قائمة المميزات المختصرة */
 .product-features-list {
     list-style: none;
     padding: 0;
@@ -669,22 +659,21 @@ nav a.active::after {
 }
 
 .product-features-list li i {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 11px;
 }
 
-/* زر الطلب المدمج */
 .product-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     width: 100%;
-    padding: 10px 14px; /* أزرار أرشق وأقل ارتفاعاً */
-    background: rgba(240, 209, 142, 0.08);
-    border: 1px solid rgba(240, 209, 142, 0.3);
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-weight: 700;
     font-size: 13px;
     text-decoration: none;
@@ -693,17 +682,16 @@ nav a.active::after {
 
 .product-btn.highlight,
 .product-btn:hover {
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
     color: #07121b;
     border-color: transparent;
-    box-shadow: 0 6px 15px rgba(185, 132, 57, 0.25);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.25);
 }
 
 .product-btn i {
     font-size: 15px;
 }
 
-/* زر الكتالوج */
 .products-more {
     text-align: center;
     margin-top: 35px;
@@ -729,7 +717,6 @@ nav a.active::after {
     }
 }
 
-
 /* =====================================================
    GALLERY SECTION (SWIPER CAROUSEL DESIGN)
 ===================================================== */
@@ -738,7 +725,6 @@ nav a.active::after {
     padding: 60px 0;
 }
 
-/* أزرار الفلترة والتنقل بين التبويبات */
 .gallery-tabs {
     display: flex;
     justify-content: center;
@@ -750,7 +736,7 @@ nav a.active::after {
 
 .tab-btn {
     background: rgba(16, 34, 45, 0.7);
-    border: 1px solid rgba(240, 209, 142, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #cbd5e1;
     padding: 9px 22px;
     border-radius: 25px;
@@ -763,13 +749,12 @@ nav a.active::after {
 
 .tab-btn:hover,
 .tab-btn.active {
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
     color: #07121b;
     border-color: transparent;
-    box-shadow: 0 5px 15px rgba(185, 132, 57, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* إخفاء وإظهار التبويبات */
 .gallery-tab-content {
     display: none;
 }
@@ -778,7 +763,6 @@ nav a.active::after {
     display: block;
 }
 
-/* بطاقة الصورة داخل السلايدر */
 .gallery-slider {
     padding-bottom: 45px !important;
 }
@@ -788,7 +772,7 @@ nav a.active::after {
     height: 280px;
     border-radius: 14px;
     overflow: hidden;
-    border: 1px solid rgba(240, 209, 142, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease;
 }
@@ -815,9 +799,9 @@ nav a.active::after {
 .category-tag {
     display: inline-block;
     align-self: flex-start;
-    background: rgba(240, 209, 142, 0.15);
-    border: 1px solid rgba(240, 209, 142, 0.3);
-    color: var(--gold-light, #f0d18e);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--gold-light, #f8f9fa);
     font-size: 11px;
     font-weight: 700;
     padding: 3px 10px;
@@ -835,9 +819,8 @@ nav a.active::after {
     transition: transform 0.4s ease;
 }
 
-/* تأثيرات الهوفر */
 .gallery-item:hover {
-    border-color: rgba(240, 209, 142, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
@@ -853,15 +836,14 @@ nav a.active::after {
     transform: translateY(0);
 }
 
-/* تخصيص أسهم ونقاط السلايدر باللون الذهبي */
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--gold-light, #f0d18e) !important;
+    color: var(--gold-light, #f8f9fa) !important;
     background: rgba(7, 18, 27, 0.7);
     width: 40px !important;
     height: 40px !important;
     border-radius: 50%;
-    border: 1px solid rgba(240, 209, 142, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
 }
 
@@ -877,12 +859,11 @@ nav a.active::after {
 }
 
 .swiper-pagination-bullet-active {
-    background: var(--gold-light, #f0d18e) !important;
+    background: var(--gold-light, #f8f9fa) !important;
     opacity: 1;
     width: 20px;
     border-radius: 10px;
 }
-
 
 /* =====================================================
    QUALITY SECTION (LUXURY & MODERN LAYOUT)
@@ -901,17 +882,16 @@ nav a.active::after {
     align-items: center;
 }
 
-/* حاوي الصورة والبطاقة العائمة */
 .quality-image-wrapper {
     position: relative;
 }
 
 .quality-image {
-    height: 480px; /* ارتفاع أنيق ومدمج */
+    height: 480px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    border: 1px solid rgba(240, 209, 142, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -932,13 +912,12 @@ nav a.active::after {
     background: linear-gradient(180deg, rgba(6, 16, 25, 0.1) 0%, rgba(6, 16, 25, 0.6) 100%);
 }
 
-/* بطاقة الضمان العائمة فوق الصورة */
 .experience-badge {
     position: absolute;
     bottom: -20px;
     left: -20px;
     background: rgba(10, 24, 34, 0.9);
-    border: 1px solid rgba(240, 209, 142, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 15px 22px;
     border-radius: 16px;
     display: flex;
@@ -952,7 +931,7 @@ nav a.active::after {
 .badge-icon {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -968,13 +947,12 @@ nav a.active::after {
 }
 
 .badge-text span {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 12px;
 }
 
-/* المحتوى والنصوص */
 .quality-content .small-title {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -996,10 +974,9 @@ nav a.active::after {
 }
 
 .quality-content > p strong {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
 }
 
-/* شبكة المميزات المقسمة */
 .quality-features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1019,7 +996,7 @@ nav a.active::after {
 
 .feature-item:hover {
     background: rgba(10, 24, 34, 0.85);
-    border-color: rgba(240, 209, 142, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-3px);
 }
 
@@ -1027,13 +1004,13 @@ nav a.active::after {
     width: 38px;
     height: 38px;
     min-width: 38px;
-    background: rgba(240, 209, 142, 0.1);
-    border: 1px solid rgba(240, 209, 142, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 16px;
 }
 
@@ -1113,7 +1090,6 @@ nav a.active::after {
     background: linear-gradient(135deg, rgba(6, 16, 25, 0.94) 0%, rgba(6, 16, 25, 0.75) 100%);
 }
 
-/* شبكة تجمع الكارت والخريطة */
 .showroom-wrapper {
     position: relative;
     z-index: 2;
@@ -1123,10 +1099,9 @@ nav a.active::after {
     align-items: center;
 }
 
-/* كارت المحتوى الزجاجي */
 .showroom-card {
     background: rgba(10, 24, 34, 0.85);
-    border: 1px solid rgba(240, 209, 142, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 35px;
     border-radius: 20px;
     backdrop-filter: blur(12px);
@@ -1135,7 +1110,7 @@ nav a.active::after {
 }
 
 .showroom-card .small-title {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 13px;
     font-weight: 700;
 }
@@ -1172,7 +1147,7 @@ nav a.active::after {
 }
 
 .detail-item i {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 16px;
     margin-top: 3px;
 }
@@ -1208,7 +1183,7 @@ nav a.active::after {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
     color: #07121b;
 }
 
@@ -1218,13 +1193,12 @@ nav a.active::after {
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* حاوي وتصميم الخريطة */
 .showroom-map-container {
     height: 100%;
     min-height: 400px;
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(240, 209, 142, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -1233,7 +1207,7 @@ nav a.active::after {
     height: 100%;
     min-height: 400px;
     border: 0;
-    filter: saturate(0.9) contrast(1.1); /* تحسين مظهر الخريطة ليتناسق مع الألوان الداكنة */
+    filter: saturate(0.9) contrast(1.1);
 }
 
 /* =====================================================
@@ -1277,7 +1251,6 @@ nav a.active::after {
     position: relative;
 }
 
-/* تنسيق عنوان القسم */
 .section-title {
     margin-bottom: 50px;
 }
@@ -1287,7 +1260,7 @@ nav a.active::after {
 }
 
 .section-title .small-title {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -1307,7 +1280,6 @@ nav a.active::after {
     margin: 0 auto;
 }
 
-/* شبكة الاتصال */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1315,7 +1287,6 @@ nav a.active::after {
     align-items: stretch;
 }
 
-/* قائمة الكروت والمعلومات */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1328,7 +1299,7 @@ nav a.active::after {
     gap: 18px;
     padding: 20px 24px;
     background: rgba(12, 28, 39, 0.7);
-    border: 1px solid rgba(240, 209, 142, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1337,7 +1308,7 @@ nav a.active::after {
 
 .contact-card:hover {
     background: rgba(12, 28, 39, 0.95);
-    border-color: rgba(240, 209, 142, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
     transform: translateX(-6px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -1349,16 +1320,16 @@ nav a.active::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gold-light, #f0d18e);
-    background: rgba(240, 209, 142, 0.08);
-    border: 1px solid rgba(240, 209, 142, 0.25);
+    color: var(--gold-light, #f8f9fa);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 12px;
     font-size: 18px;
     transition: all 0.3s ease;
 }
 
 .contact-card:hover .contact-icon {
-    background: linear-gradient(135deg, #f0d18e, #b98439);
+    background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
     color: #07121b;
 }
 
@@ -1375,11 +1346,10 @@ nav a.active::after {
     line-height: 1.5;
 }
 
-/* صندوق الاستشارة */
 .contact-box {
     padding: 35px;
     background: linear-gradient(145deg, rgba(16, 35, 46, 0.9), rgba(9, 21, 30, 0.9));
-    border: 1px solid rgba(240, 209, 142, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -1393,10 +1363,10 @@ nav a.active::after {
     align-items: center;
     gap: 8px;
     padding: 6px 14px;
-    background: rgba(240, 209, 142, 0.1);
-    border: 1px solid rgba(240, 209, 142, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 12px;
     font-weight: 600;
     width: fit-content;
@@ -1417,7 +1387,6 @@ nav a.active::after {
     margin-bottom: 25px;
 }
 
-/* زر الواتساب المطوّر */
 .whatsapp-btn {
     width: 100%;
     background: linear-gradient(135deg, #25d366, #128c7e);
@@ -1477,7 +1446,7 @@ nav a.active::after {
 ===================================================== */
 .footer {
     background: linear-gradient(180deg, #030a10 0%, #02060a 100%);
-    border-top: 1px solid rgba(240, 209, 142, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding: 70px 0 25px;
     position: relative;
     color: #94a3b8;
@@ -1490,7 +1459,6 @@ nav a.active::after {
     margin-bottom: 50px;
 }
 
-/* الشعار والنبذة التعريفية */
 .footer-logo {
     display: inline-flex;
     align-items: center;
@@ -1504,7 +1472,7 @@ nav a.active::after {
     height: 60px;
     object-fit: contain;
     border-radius: 50%;
-    border: 1px solid rgba(240, 209, 142, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-logo .logo-text strong {
@@ -1515,7 +1483,7 @@ nav a.active::after {
 }
 
 .footer-logo .logo-text span {
-    color: var(--gold-light, #f0d18e);
+    color: var(--gold-light, #f8f9fa);
     font-size: 11px;
 }
 
@@ -1526,7 +1494,6 @@ nav a.active::after {
     margin-bottom: 22px;
 }
 
-/* أيقونات التواصل الاجتماعي */
 .socials {
     display: flex;
     gap: 12px;
@@ -1538,7 +1505,7 @@ nav a.active::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(240, 209, 142, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.03);
     border-radius: 50%;
     color: #cbd5e1;
